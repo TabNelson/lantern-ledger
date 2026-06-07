@@ -96,6 +96,10 @@ function getConnectorLabel(connector: Connector) {
   return connector.name;
 }
 
+function getConnectorKey(connector: Connector) {
+  return getConnectorLabel(connector).toLowerCase().replace(/\s+/g, "-");
+}
+
 export function LanternLedgerApp() {
   const [walletOpen, setWalletOpen] = useState(false);
   const [activeAction, setActiveAction] = useState<ActionKey | null>(null);
@@ -112,6 +116,18 @@ export function LanternLedgerApp() {
   });
   const { disconnect } = useDisconnect();
   const { switchChain, isPending: isSwitching } = useSwitchChain();
+
+  const walletConnectors = useMemo(() => {
+    const seen = new Set<string>();
+
+    return connectors.filter((walletConnector) => {
+      const key = getConnectorKey(walletConnector);
+
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }, [connectors]);
 
   const reads = useMemo(
     () =>
@@ -281,7 +297,7 @@ export function LanternLedgerApp() {
                   </button>
                 </div>
                 <div className="grid gap-2">
-                  {connectors.map((walletConnector) => (
+                  {walletConnectors.map((walletConnector) => (
                     <button
                       key={`${walletConnector.id}-${walletConnector.uid}`}
                       type="button"
