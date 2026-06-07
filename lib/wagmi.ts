@@ -1,7 +1,6 @@
 import { coinbaseWallet, injected } from "wagmi/connectors";
 import { base } from "wagmi/chains";
 import { createConfig, http } from "wagmi";
-import { Attribution } from "ox/erc8021";
 import type { EIP1193Provider } from "viem";
 
 export const contractAddress = (
@@ -10,11 +9,10 @@ export const contractAddress = (
 ) as `0x${string}`;
 
 export const builderCode =
-  process.env.NEXT_PUBLIC_BASE_BUILDER_CODE ?? "bc_lantern_ledger_pending";
+  process.env.NEXT_PUBLIC_BASE_BUILDER_CODE ?? "bc_cduxjtls";
 
-export const attributionSuffix = Attribution.toDataSuffix({
-  codes: [builderCode],
-}) as `0x${string}`;
+export const attributionSuffix = (process.env.NEXT_PUBLIC_BASE_ATTRIBUTION_SUFFIX ??
+  "0x62635f636475786a746c730b0080218021802180218021802180218021") as `0x${string}`;
 
 export const isContractConfigured =
   contractAddress !== "0x0000000000000000000000000000000000000000";
