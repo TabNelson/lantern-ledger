@@ -1,0 +1,92 @@
+export const lanternLedgerAbi = [
+  {
+    type: "function",
+    name: "userLights",
+    stateMutability: "view",
+    inputs: [{ name: "", type: "address" }],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "userBells",
+    stateMutability: "view",
+    inputs: [{ name: "", type: "address" }],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "userSafes",
+    stateMutability: "view",
+    inputs: [{ name: "", type: "address" }],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "totalLights",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "totalBells",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "totalSafes",
+    stateMutability: "view",
+    inputs: [],
+    outputs: [{ name: "", type: "uint256" }],
+  },
+  {
+    type: "function",
+    name: "lightBeacon",
+    stateMutability: "nonpayable",
+    inputs: [],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "ringBell",
+    stateMutability: "nonpayable",
+    inputs: [],
+    outputs: [],
+  },
+  {
+    type: "function",
+    name: "markSafe",
+    stateMutability: "nonpayable",
+    inputs: [],
+    outputs: [],
+  },
+  {
+    type: "event",
+    name: "BeaconLit",
+    inputs: [
+      { name: "user", type: "address", indexed: true },
+      { name: "userLights", type: "uint256", indexed: false },
+      { name: "totalLights", type: "uint256", indexed: false },
+    ],
+  },
+  {
+    type: "event",
+    name: "BellRung",
+    inputs: [
+      { name: "user", type: "address", indexed: true },
+      { name: "userBells", type: "uint256", indexed: false },
+      { name: "totalBells", type: "uint256", indexed: false },
+    ],
+  },
+  {
+    type: "event",
+    name: "SafetyMarked",
+    inputs: [
+      { name: "user", type: "address", indexed: true },
+      { name: "userSafes", type: "uint256", indexed: false },
+      { name: "totalSafes", type: "uint256", indexed: false },
+    ],
+  },
+] as const;
