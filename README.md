@@ -37,3 +37,12 @@ https://github.com/TabNelson/lantern-ledger.git
 - Viem
 
 ## Features
+
+- Minimal Base Mini App interface
+- Three repeatable contract actions
+- Per-user counters for each action
+- Global totals for each action
+- Contract reads and writes through Wagmi and Viem
+- Base App iframe support through deployment headers
+
+## Local Setup
