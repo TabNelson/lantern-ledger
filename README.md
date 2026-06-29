@@ -172,3 +172,12 @@ Do not commit private credentials or local environment files.
 ## Suggested Project Structure
 
 Key files and directories include:
+
+```text
+app/
+components/
+contracts/
+lib/
+vercel.json
+.env.example
+```
