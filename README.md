@@ -85,3 +85,11 @@ NEXT_PUBLIC_BASE_BUILDER_CODE=bc_xxxxxx
 `NEXT_PUBLIC_BASE_BUILDER_CODE` is used for Base builder attribution.
 
 ## Base App Verification
+
+The Base verification tag is written directly in `app/layout.tsx`.
+
+Update the placeholder value before deployment:
+
+```tsx
+<meta name="base:app_id" content="YOUR_BASE_DEV_VERIFY_VALUE" />
+```
