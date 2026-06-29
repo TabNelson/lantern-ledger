@@ -46,3 +46,13 @@ https://github.com/TabNelson/lantern-ledger.git
 - Base App iframe support through deployment headers
 
 ## Local Setup
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
