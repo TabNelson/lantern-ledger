@@ -114,3 +114,12 @@ The ABI matches the following contract reads and writes:
 
 - `userLights(address)`
 - `userBells(address)`
+- `userSafes(address)`
+- `totalLights()`
+- `totalBells()`
+- `totalSafes()`
+- `lightBeacon()`
+- `ringBell()`
+- `markSafe()`
+
+## Frontend Contract Usage
