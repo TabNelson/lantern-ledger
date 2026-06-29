@@ -103,3 +103,14 @@ The Solidity source is located at:
 ```text
 contracts/LanternLedger.sol
 ```
+
+The frontend ABI is located at:
+
+```text
+lib/abi.ts
+```
+
+The ABI matches the following contract reads and writes:
+
+- `userLights(address)`
+- `userBells(address)`
