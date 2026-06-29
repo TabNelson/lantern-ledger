@@ -17,3 +17,13 @@ Lantern Ledger provides a small interface for writing simple signal events to an
 Each action can be performed repeatedly by a connected wallet:
 
 - **Light Beacon** records a light signal.
+- **Ring Bell** records a bell signal.
+- **Mark Safe** records a safety signal.
+
+The app also reads user-specific and global totals from the contract.
+
+## Repository
+
+Repository URL:
+
+https://github.com/TabNelson/lantern-ledger.git
