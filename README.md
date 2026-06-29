@@ -93,3 +93,13 @@ Update the placeholder value before deployment:
 ```tsx
 <meta name="base:app_id" content="YOUR_BASE_DEV_VERIFY_VALUE" />
 ```
+
+The tag is intentionally placed directly inside `<head>` for base.dev offchain attribution verification.
+
+## Contract
+
+The Solidity source is located at:
+
+```text
+contracts/LanternLedger.sol
+```
