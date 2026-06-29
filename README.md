@@ -123,3 +123,13 @@ The ABI matches the following contract reads and writes:
 - `markSafe()`
 
 ## Frontend Contract Usage
+
+The main app component is located at:
+
+```text
+components/LanternLedgerApp.tsx
+```
+
+This component performs contract reads for user and total counts.
+
+It also sends the three contract write actions:
