@@ -66,3 +66,11 @@ http://localhost:3000
 ```
 
 ## Required Configuration
+
+Create a local environment file from the example file:
+
+```bash
+cp .env.example .env.local
+```
+
+Set the following values in `.env.local`:
