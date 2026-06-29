@@ -133,3 +133,13 @@ components/LanternLedgerApp.tsx
 This component performs contract reads for user and total counts.
 
 It also sends the three contract write actions:
+
+- `lightBeacon`
+- `ringBell`
+- `markSafe`
+
+## Attribution
+
+`lib/wagmi.ts` builds an ERC-8021 calldata suffix from `NEXT_PUBLIC_BASE_BUILDER_CODE` using `ox/erc8021`.
+
+Each `writeContractAsync` call in `components/LanternLedgerApp.tsx` explicitly passes the suffix:
