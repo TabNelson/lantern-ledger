@@ -181,3 +181,13 @@ lib/
 vercel.json
 .env.example
 ```
+
+## Notes
+
+This project is designed to stay small and focused.
+
+Keep the contract ABI in `lib/abi.ts` aligned with `contracts/LanternLedger.sol`.
+
+When changing the deployed contract address, update `.env.local` for local development and the equivalent environment setting in production.
+
+Before publishing a production deployment, confirm that the contract address, builder code, verification tag, and iframe settings are all configured correctly.
