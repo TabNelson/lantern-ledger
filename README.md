@@ -27,3 +27,13 @@ The app also reads user-specific and global totals from the contract.
 Repository URL:
 
 https://github.com/TabNelson/lantern-ledger.git
+
+## Tech Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS
+- Wagmi
+- Viem
+
+## Features
