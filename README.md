@@ -151,3 +151,14 @@ dataSuffix: attributionSuffix
 After setting the real builder code, inspect a Basescan transaction input and confirm that the encoded string appears at the end of the calldata.
 
 ## Deployment Notes
+
+`vercel.json` allows iframe embedding for Base App access.
+
+After deploying on Vercel, disable Deployment Protection for the production deployment.
+
+A typical deployment flow is:
+
+```bash
+git remote add origin https://github.com/YOUR_NAME/lantern-ledger.git
+git push -u origin main
+vercel
