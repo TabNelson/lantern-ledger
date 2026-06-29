@@ -74,3 +74,14 @@ cp .env.example .env.local
 ```
 
 Set the following values in `.env.local`:
+
+```bash
+NEXT_PUBLIC_LANTERN_LEDGER_ADDRESS=0xYourDeployedContract
+NEXT_PUBLIC_BASE_BUILDER_CODE=bc_xxxxxx
+```
+
+`NEXT_PUBLIC_LANTERN_LEDGER_ADDRESS` should point to the deployed `LanternLedger` contract.
+
+`NEXT_PUBLIC_BASE_BUILDER_CODE` is used for Base builder attribution.
+
+## Base App Verification
