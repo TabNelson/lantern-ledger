@@ -162,3 +162,13 @@ A typical deployment flow is:
 git remote add origin https://github.com/YOUR_NAME/lantern-ledger.git
 git push -u origin main
 vercel
+vercel --prod
+```
+
+Use your own GitHub and Vercel credentials.
+
+Do not commit private credentials or local environment files.
+
+## Suggested Project Structure
+
+Key files and directories include:
