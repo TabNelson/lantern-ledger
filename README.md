@@ -143,3 +143,11 @@ It also sends the three contract write actions:
 `lib/wagmi.ts` builds an ERC-8021 calldata suffix from `NEXT_PUBLIC_BASE_BUILDER_CODE` using `ox/erc8021`.
 
 Each `writeContractAsync` call in `components/LanternLedgerApp.tsx` explicitly passes the suffix:
+
+```ts
+dataSuffix: attributionSuffix
+```
+
+After setting the real builder code, inspect a Basescan transaction input and confirm that the encoded string appears at the end of the calldata.
+
+## Deployment Notes
