@@ -56,3 +56,13 @@ npm install
 Start the development server:
 
 ```bash
+npm run dev
+```
+
+Open the app locally:
+
+```text
+http://localhost:3000
+```
+
+## Required Configuration
